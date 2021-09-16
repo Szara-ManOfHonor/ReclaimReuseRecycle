@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Reclaim, Reuse, Recycle (Continued)</name>
   <packageId>Mlie.ReclaimReuseRecycle</packageId>
-  <author>DoctorVanGogh</author>
+  <author>Original mod by DoctorVanGogh</author>
   <url>https://github.com/emipa606/ReclaimReuseRecycle</url>
   <supportedVersions>
     <li>1.3</li>
@@ -21,6 +21,8 @@
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of DoctorVanGoghs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1120445716
+
+This version is for the HSK modpack.
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -61,18 +63,15 @@ This mod adds some special filters to the &apos;corpses&apos; category of stockp
 The vanilla &apos;butcher corpse&apos; recipe default get&apos;s modified to only use corpses without any parts. You can manually enable the use of corpses with parts if you so like.
 
 [h1](Un-)Installation[/h1]
-To install simply subscribe to this mod. Load order does not matter.
+Load somewhere after Core_SK.
 
 To Uninstall just make sure you have no reclaimed parts and no harvesting/refurbishment jobs active. You can then simply deactivate the mod. There will be a bunch of red error messages after load, but the save should load and run fine. Those errors will be gone on subsequent loads.
 
 
 [i]Uninstalled 3rd party mods:[/i]
-If you hve a reclaimed part in your colony and you uninstall the mod that introduces the base part for that you will get an error on load. You should dispose of any reclaimed parts coresponding to a 3rd party mod before you remove that mod.
+If you have a reclaimed part in your colony and you uninstall the mod that introduces the base part for that you will get an error on load. You should dispose of any reclaimed parts coresponding to a 3rd party mod before you remove that mod.
 
-[h1]Ludeon forum thread[/h1]
-A non steam version is available at https://ludeon.com/forums/index.php?topic=35322.0
-
-[h3]Like my Mods?[/h3]
+[h3]Like DoctorVanGogh's Mods?[/h3]
 [url=https://ko-fi.com/DoctorVanGogh][img]https://raw.githubusercontent.com/DoctorVanGogh/Shared/master/Sponsoring/Ko-Fi/buymeacoffee-28.png[/img][/url]
 
 [h3]Looking for an older version?[/h3]
