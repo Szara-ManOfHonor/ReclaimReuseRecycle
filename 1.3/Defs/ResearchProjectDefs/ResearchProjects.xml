@@ -8,7 +8,7 @@
 
     <!-- Harvesting -->
 
-	<ResearchProjectDef>
+	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>R3_BasicHarvesting</defName>
 		<label>Basic Harvesting</label>
 		<description>Knowledge how to extract parts of basic complexity from corpses.</description>
@@ -17,12 +17,9 @@
         <tab>R3_ResearchTab</tab>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
-		<tags>
-			<li>TribalStart</li>
-		</tags>        
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
+	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>R3_AdvancedHarvesting</defName>
 		<label>Advanced Harvesting</label>
 		<description>Knowledge how to extract parts of advanced complexity from corpses.</description>
@@ -34,12 +31,10 @@
         <prerequisites>
             <li>R3_BasicHarvesting</li>
         </prerequisites>
-		<tags>
-			<li>ClassicStart</li>
-		</tags>        
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef>
 
- 	<ResearchProjectDef>
+ 	<ResearchProjectDef ParentName="HitechBase">
 		<defName>R3_GlittertechHarvesting</defName>
 		<label>Glittertech Harvesting</label>
 		<description>Knowledge how to extract parts of Glittertech complexity from corpses.</description>
@@ -51,12 +46,13 @@
         <prerequisites>
             <li>R3_AdvancedHarvesting</li>
         </prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef> 
 
 
     <!-- refurbishment -->
 
-	<ResearchProjectDef>
+	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>R3_BasicRefurbishment</defName>
 		<label>Basic Refurbishment</label>
 		<description>Knowledge how to sterilze &amp; refurbish reclaimed parts of basic complexity.</description>
@@ -68,12 +64,9 @@
         <prerequisites>
             <li>R3_BasicHarvesting</li>
         </prerequisites>        
-		<tags>
-			<li>ClassicStart</li>
-		</tags>        
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
+	<ResearchProjectDef ParentName="IndustrialBase">
 		<defName>R3_AdvancedRefurbishment</defName>
 		<label>Advanced Refurbishment</label>
 		<description>Knowledge how to sterilze &amp; refurbish reclaimed parts of advanced complexity.</description>
@@ -85,22 +78,24 @@
         <prerequisites>
             <li>R3_BasicRefurbishment</li>
             <li>R3_AdvancedHarvesting</li>            
-        </prerequisites>           
+        </prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
+	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>R3_GlittertechRefurbishment</defName>
 		<label>Glittertech Refurbishment</label>
 		<description>Knowledge how to sterilze &amp; refurbish reclaimed parts of Glittertech complexity.</description>
 		<baseCost>1000</baseCost>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Spacer</techLevel>
         <tab>R3_ResearchTab</tab>
 		<researchViewX>5</researchViewX>
 		<researchViewY>1</researchViewY>
         <prerequisites>
             <li>R3_AdvancedRefurbishment</li>
             <li>R3_GlittertechHarvesting</li>            
-        </prerequisites>        		   
+        </prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef>
 
 </Defs>

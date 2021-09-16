@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingCategoryDef>
     <defName>BodyPartsReclaimed</defName>
     <label>Reclaimed Body Parts</label>
     <parent>Items</parent>
   </ThingCategoryDef>
-
   <ThingCategoryDef>
     <defName>BodyPartsNonSterile</defName>
     <label>Non-Sterile Body Part</label>
     <parent>BodyPartsReclaimed</parent>
   </ThingCategoryDef>
-
   <ThingCategoryDef>
     <defName>BodyPartsNonSterile_Primitive</defName>
     <label>Primitive Non-Sterile Body Part</label>
@@ -27,13 +25,11 @@
     <label>Glittertech Non-Sterile Body Part</label>
     <parent>BodyPartsNonSterile</parent>
   </ThingCategoryDef>
-
   <ThingCategoryDef>
     <defName>BodyPartsMangled</defName>
     <label>Mangled Body Parts</label>
     <parent>BodyPartsReclaimed</parent>
   </ThingCategoryDef>
-
   <ThingCategoryDef>
     <defName>BodyPartsMangled_Primitive</defName>
     <label>Primitive Mangled Body Part</label>
@@ -49,5 +45,4 @@
     <label>Glittertech Mangled Body Part</label>
     <parent>BodyPartsMangled</parent>
   </ThingCategoryDef>
-
 </Defs>

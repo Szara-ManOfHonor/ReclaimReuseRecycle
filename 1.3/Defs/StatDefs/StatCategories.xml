@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>  
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
   <StatCategoryDef>
     <defName>ReclaimedItem</defName>
     <label>Reclaimed item</label>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef Name="R3.BuildingBase" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
@@ -17,15 +16,10 @@
   </ThingDef>
 
   <!-- ========================= Work tables ==========================-->
-
   <ThingDef Name="R3.BenchBase" ParentName="R3.BuildingBase" Abstract="True">
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <canOverlapZones>false</canOverlapZones>
-		<building>
-			<workSpeedPenaltyOutdoors>true</workSpeedPenaltyOutdoors>
-			<workSpeedPenaltyTemperature>true</workSpeedPenaltyTemperature>
-		</building>
 		<comps>
 			<li>
 				<compClass>CompReportWorkSpeed</compClass>
@@ -33,15 +27,10 @@
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
-    </placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
   </ThingDef>
-
- <ThingDef Name="R3_Bench" ParentName="R3.BenchBase" Abstract="True">   
-    <costStuffCount>75</costStuffCount> 
-    <stuffCategories>
-      <li>Woody</li>    
-      <li>Metallic</li>
-    </stuffCategories>
+  <ThingDef Name="R3_Bench" ParentName="R3.BenchBase" Abstract="True">
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -60,7 +49,6 @@
     <designationHotKey>Misc3</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>      
 		</placeWorkers>
   </ThingDef>  
 
@@ -73,9 +61,8 @@
     <graphicData>
       <texPath>Things/Building/Production/HarvestingBench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>      
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(2.3125,1.5)</drawSize>
-      <allowFlip>false</allowFlip>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -83,10 +70,19 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>    
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>    
     <researchPrerequisites>
       <li>R3_BasicHarvesting</li>
-    </researchPrerequisites>     
+    </researchPrerequisites>  
+    <stuffCategories>
+      <li>Woody</li>    
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+	<costList>
+		<ComponentIndustrial>7</ComponentIndustrial>
+		<Mechanism>3</Mechanism>
+	</costList>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
@@ -113,7 +109,7 @@
 
   <ThingDef ParentName="R3_Bench">
     <defName>R3_TableRefurbishment</defName>
-    <thingClass>Building_WorkTable</thingClass>
+    <thingClass>Building_WorkTable</thingClass>     
     <label>refurbishment table</label>
     <description>A worktable to refurbish and clean reclaimed parts &amp; implants. Benefits from being placed near a harvesting table.</description>
     <graphicData>
@@ -133,7 +129,16 @@
     </recipes>  
     <researchPrerequisites>
       <li>R3_BasicRefurbishment</li>
-    </researchPrerequisites>   
+    </researchPrerequisites> 
+    <stuffCategories>
+      <li>Woody</li>    
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+	<costList>
+		<ComponentIndustrial>12</ComponentIndustrial>
+		<Mechanism>5</Mechanism>
+	</costList>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
